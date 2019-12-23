@@ -2,37 +2,67 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  background-color: rgb(228, 178, 15);
+  margin: 0%;
+  padding: 15px;
+  height: 100px;
+  font-size: 45px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  font-family: 'Exo', sans-serif;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  width: 100px;
+  height: 50px;
+  box-shadow: none;
+  background-color: white;
+  color:rgb(228, 178, 15);
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  font-family: 'Exo', sans-serif;
+  border: 1px rgb(228, 178, 15) solid;
+  border-radius: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button:hover{
+  background-color: rgb(228, 178, 15);
+  /* border: 1px rgb(40, 162, 179) solid; */
+  color: black;
+}
+
+input{
+  height: 50px;
+  width: 180px;
+  border: 2px black solid; 
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Exo', sans-serif;
+}
+
+input:focus{
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+img{
+  margin-right: 20px;
+}
+h2{
+  font-family: 'Exo', sans-serif;
+  text-transform: capitalize;
+}
+a{
+  text-decoration: none;
+}
+#credit{
+  font-size: 10px;
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

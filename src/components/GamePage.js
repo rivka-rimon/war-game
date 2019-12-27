@@ -15,13 +15,15 @@ const[ComputerConter,setComputerConter] = useState(0);
 const[playerconter,setPlayerConter] = useState(0);
 const[winner , setWinner] = useState('win');
 
+// get the cards and player array from App
 useEffect(() => {
     setPlayer(props.player);
     setPlayerCards(props.playerCard);
     setComputerCards(props.computerCard);
-})
+},[player])
 
 const endGame = ()=>{
+    // the game
     if (index<25){
         return(
         <div>
@@ -46,14 +48,12 @@ const endGame = ()=>{
             <Link to = '/end_game'>
             <button 
             onClick={()=>{
-            player.games++
             // send winner and player to app
             props.winner(winner); props.newPlayer(player)}}>
             end</button>
             </Link>
-        )
+        )}
     }
-}
 
 
     return (
@@ -61,6 +61,7 @@ const endGame = ()=>{
             <div id="helloUser">hello {player.name}!
             <Link to = '/' id="logOut">  Another user?</Link>
             </div>
+            {/* show points */}
             <div className="points">
                 <p id="pointsHeader">The Points</p>
                 <p>computer: {ComputerConter} you: {playerconter} </p>
@@ -75,6 +76,7 @@ const endGame = ()=>{
             <p>you
                 <img src={Person} alt="person" className="icon"/>
             </p> <br/>
+            {/* the game and the end of the game */}
             {endGame()}
         </div>
     )

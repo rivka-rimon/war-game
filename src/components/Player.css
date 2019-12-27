@@ -1,0 +1,20 @@
+table,td{
+    padding: 15px;
+    border-collapse: collapse;
+    font-size: 20px;
+    font-family: 'Exo', sans-serif;
+    text-transform: capitalize;
+}
+table{
+    border: 1px rgb(40, 162, 179) solid;
+    border-radius: 8px;
+    margin-left: 42%;
+    margin-bottom: 10px;
+    width: 300px;
+}
+.rightSide{
+    background-color: rgb(163, 213, 219);
+    font-weight: bold;
+}
+
+
